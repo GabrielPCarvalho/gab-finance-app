@@ -1,6 +1,7 @@
 {
   "extends": "@react-native/typescript-config",
   "include": [
+    "global.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "./src",
@@ -13,19 +14,22 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "strict": false,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
     "baseUrl": "./",
     "paths": {
-      "@assets/*": ["./src/assets/*"],
-      "@components/*": ["./src/components/*"],
-      "@store/*": ["./src/store/*"],
-      "@hooks/*": ["./src/hooks/*"],
-      "@screens/*": ["./src/screens/*"],
-      "@routes/*": ["./src/routes/*"],
-      "@services/*": ["./src/services/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@dtos/*": ["./src/dtos/*"],
-      "@api/*": ["./src/api/*"]
+      "@/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@stores/*": ["src/stores/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@screens/*": ["src/screens/*"],
+      "@routes/*": ["src/routes/*"],
+      "@services/*": ["src/services/*"],
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
+      "@dtos/*": ["src/dtos/*"],
+      "@api/*": ["src/api/*"]
     }
   }
 }

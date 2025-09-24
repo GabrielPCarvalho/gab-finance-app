@@ -3,11 +3,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import PrivateRoutes from './private.routes';
 import PublicRoutes from './public.routes';
 
+import { useStores } from '@/utils';
+
 const Routes = () => {
-  const token = true;
+  const { user } = useStores();
+
   return (
     <NavigationContainer>
-      {token ? <PrivateRoutes /> : <PublicRoutes />}
+      {user.isAuthenticated ? <PrivateRoutes /> : <PublicRoutes />}
     </NavigationContainer>
   );
 };

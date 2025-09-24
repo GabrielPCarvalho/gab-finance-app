@@ -16,7 +16,7 @@ const PrivateRoutes = () => {
       }}
     >
       <Private.Screen name="Tabs" component={TabRoutes} />
-      <Private.Screen name="Profile" component={Settings} />
+      <Private.Screen name="Settings" component={Settings} />
       <Private.Screen
         name="TransactionDetails"
         component={TransactionDetails}
