@@ -1,12 +1,12 @@
 import { useNavigation } from '@react-navigation/native';
 import { Button, Text, View } from 'react-native';
 
-const Home = () => {
+const EmergencyFund = () => {
   const { navigate } = useNavigation();
 
   return (
     <View className="bg-high-light flex-1 justify-center items-center">
-      <Text>Home</Text>
+      <Text>EmergencyFund</Text>
       <Button
         title="Go to Details"
         onPress={() => navigate('TransactionDetails')}
@@ -15,4 +15,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default EmergencyFund;

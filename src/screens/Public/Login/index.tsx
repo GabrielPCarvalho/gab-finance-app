@@ -1,10 +1,10 @@
 import { Text, View } from 'react-native';
 
 import FastImage from 'react-native-fast-image';
-
-import SocialLoginButton from '@components/SocialLoginButton';
-import { useStores } from '@/utils';
 import { useNavigation } from '@react-navigation/native';
+
+import SocialLoginButton from '@/components/SocialLoginButton';
+import { useStores } from '@/utils';
 import { AppRoutes } from '@/constants/routes';
 
 const meditatingGif = require('@assets/gif/meditating-on-finances.gif');
